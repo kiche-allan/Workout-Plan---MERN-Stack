@@ -16,8 +16,12 @@ const workoutSchema = new Schema({
     load: {
         type: Number,
         required: true
+    },
+    user_id: {
+        type: String,
+        required: true
     }
 }, {timestamps: true})
 
 //make a model based on the schema
-module.exports = mongoose.model('workout', workoutSchema)
+module.exports = mongoose.model('Workout', workoutSchema)
